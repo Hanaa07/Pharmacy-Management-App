@@ -48,11 +48,11 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Button>
-            <Label fx:id="name" alignment="CENTER" contentDisplay="CENTER" layoutX="24.0" layoutY="147.0" prefHeight="26.0" prefWidth="158.0" style="-fx-background-color: transparent; -fx-border-color: #099006; -fx-border-width: 0 0 1 0;" textAlignment="CENTER" textFill="#099006">
+            <Label fx:id="name" alignment="CENTER" contentDisplay="CENTER" layoutX="24.0" layoutY="155.0" prefHeight="26.0" prefWidth="158.0" style="-fx-background-color: #00442F; -fx-border-color: #099006; -fx-border-width: 0 0 1 0;" textAlignment="CENTER" textFill="#099006">
                <font>
                   <Font size="14.0" />
                </font></Label>
-            <Label fx:id="email" alignment="CENTER" contentDisplay="CENTER" layoutX="24.0" layoutY="191.0" prefHeight="26.0" prefWidth="158.0" style="-fx-background-color: transparent; -fx-border-color: #099006; -fx-border-width: 0 0 1 0;" textAlignment="CENTER" textFill="#099006">
+            <Label fx:id="email" alignment="CENTER" contentDisplay="CENTER" layoutX="24.0" layoutY="198.0" prefHeight="26.0" prefWidth="158.0" style="-fx-background-color: #00442F; -fx-border-color: #099006; -fx-border-width: 0 0 1 0;" textAlignment="CENTER" textFill="#099006">
                <font>
                   <Font size="14.0" />
                </font></Label>
@@ -62,7 +62,7 @@
                </image>
             </ImageView>
          </children></AnchorPane>
-      <Label layoutX="202.0" layoutY="18.0" text="Dashboard">
+      <Label layoutX="202.0" layoutY="18.0" text="Dashboard" textFill="#00442f">
          <font>
             <Font name="Arial Black" size="22.0" />
          </font>

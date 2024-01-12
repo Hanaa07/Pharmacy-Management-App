@@ -37,28 +37,28 @@
                </font>
             </Button>
          </children></AnchorPane>
-        <Label layoutX="310.0" layoutY="405.0" text="Address">
+        <Label layoutX="302.0" layoutY="405.0" text="Address">
             <font>
                 <Font name="Verdana" size="14.0" />
             </font>
         </Label>
-        <Label layoutX="308.0" layoutY="318.0" text="Mobile No.">
+        <Label layoutX="302.0" layoutY="317.0" text="Mobile No.">
             <font>
                 <Font name="Verdana" size="14.0" />
             </font>
         </Label>
-        <Label layoutX="308.0" layoutY="270.0" text="Name">
+        <Label layoutX="302.0" layoutY="270.0" text="Name">
             <font>
                 <Font name="Verdana" size="14.0" />
             </font>
         </Label>
-        <Line endX="-100.0" endY="328.0" layoutX="526.0" layoutY="152.0" opacity="0.3" startX="-100.0" startY="104.39999389648438" />
-        <Label layoutX="308.0" layoutY="360.0" text="Email ID">
+        <Line endX="-100.0" endY="328.0" layoutX="526.0" layoutY="152.0" opacity="0.3" startX="-100.0" startY="104.39999389648438" stroke="#00442f" strokeWidth="2.0" />
+        <Label layoutX="302.0" layoutY="360.0" text="Email ID">
             <font>
                 <Font name="Verdana" size="14.0" />
             </font>
         </Label>
-        <Label layoutX="190.0" layoutY="35.0" prefHeight="45.0" prefWidth="236.0" text="Personal Information">
+        <Label layoutX="190.0" layoutY="35.0" prefHeight="45.0" prefWidth="236.0" text="Personal Information" textFill="#00442f">
             <font>
                 <Font name="Verdana" size="20.0" />
             </font>
@@ -66,31 +66,19 @@
       <Label fx:id="name" alignment="TOP_CENTER" layoutX="453.0" layoutY="269.0" prefHeight="19.0" prefWidth="236.0">
          <font>
             <Font name="Verdana" size="14.0" />
-         </font>
-         <effect>
-            <Glow level="0.5" />
-         </effect></Label>
+         </font></Label>
       <Label fx:id="number" alignment="TOP_CENTER" layoutX="450.0" layoutY="317.0" prefHeight="19.0" prefWidth="236.0">
          <font>
             <Font name="Verdana" size="15.0" />
-         </font>
-         <effect>
-            <Glow level="0.5" />
-         </effect></Label>
+         </font></Label>
       <Label fx:id="email" alignment="TOP_CENTER" layoutX="450.0" layoutY="359.0" prefHeight="18.0" prefWidth="236.0">
          <font>
             <Font name="Verdana" size="15.0" />
-         </font>
-         <effect>
-            <Glow level="0.5" />
-         </effect></Label>
+         </font></Label>
       <Label fx:id="address" alignment="TOP_CENTER" layoutX="453.0" layoutY="405.0" prefHeight="64.0" prefWidth="236.0" wrapText="true">
          <font>
             <Font name="Verdana" size="15.0" />
-         </font>
-         <effect>
-            <Glow level="0.5" />
-         </effect></Label>
+         </font></Label>
       <Button fx:id="back" alignment="CENTER" layoutX="589.0" layoutY="527.0" mnemonicParsing="false" onAction="#onBackClicked" prefHeight="38.0" prefWidth="100.0" style="-fx-background-color: #d73a49; -fx-background-radius: 15;" text="Back" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />

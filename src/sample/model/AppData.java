@@ -20,9 +20,9 @@ public class AppData {
     public static ObservableList<Label> notificationList = FXCollections.observableArrayList();;
     public static Medicines selectedMedicine;
     public static String pharmacist;
-    public static final String PharmName = "Pharmacy Store";
+    public static final String PharmName = "LAMBDA";
     public static Label pat_name = new Label();
     public static Label contact = new Label();
-    public static String docName ="Dr. Sharma";
+    public static String docName ="Dr. X";
     public static Label date = new Label();
 }

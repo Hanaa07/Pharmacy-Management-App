@@ -1,33 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.effect.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FXMLDocumentControllerAddMedicine">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FXMLDocumentControllerAddMedicine">
    <children>
-      <ImageView fitHeight="600.0" fitWidth="750.0">
-         <image>
-            <Image url="@../Images/medicine-science-concept-background.jpg" />
-         </image>
-      </ImageView>
-      <AnchorPane prefHeight="600.0" prefWidth="150.0" style="-fx-background-color: #8fbac2;">
+      <AnchorPane layoutX="-24.0" prefHeight="600.0" prefWidth="200.0" style="-fx-background-color: #d5f4d8; -fx-background-radius: 20;">
          <children>
-            <Button fx:id="details" layoutY="110.0" mnemonicParsing="false" onAction="#onDetailsClicked" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #8fbac2;" text="Pharmacist Details" textFill="#dddddd">
+            <Button fx:id="details" layoutX="25.0" layoutY="112.0" mnemonicParsing="false" onAction="#onDetailsClicked" prefHeight="31.0" prefWidth="175.0" style="-fx-background-color: #d5f4d8;" text="Pharmacist Details" textFill="#099006">
                <font>
-                  <Font name="Verdana" size="16.0" />
+                  <Font name="Verdana" size="14.0" />
                </font>
             </Button>
-            <Button fx:id="transaction" layoutY="150.0" mnemonicParsing="false" onAction="#onTransactionCLicked" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #8fbac2;" text="Transation Details" textFill="#dddddd">
+            <Button fx:id="transaction" layoutX="25.0" layoutY="151.0" mnemonicParsing="false" onAction="#onTransactionCLicked" prefHeight="31.0" prefWidth="175.0" style="-fx-background-color: #d5f4d8;" text="Transation Details" textFill="#099006">
                <font>
-                  <Font name="Verdana" size="16.0" />
+                  <Font name="Verdana" size="14.0" />
                </font>
             </Button>
-            <Button fx:id="bill" layoutY="194.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #8fbac2;" text="Billing" textFill="WHITE">
+            <Button fx:id="bill" layoutX="24.0" layoutY="194.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="175.0" style="-fx-background-color: #d5f4d8;" text="Billing" textFill="#054e02">
                <font>
-                  <Font name="Verdana" size="16.0" />
+                  <Font name="Verdana" size="14.0" />
                </font>
                <effect>
                   <Glow level="0.2" />
@@ -35,48 +32,51 @@
             </Button>
          </children>
       </AnchorPane>
-      <Label layoutX="176.0" layoutY="26.0" text="Add Medicine">
+      <Label layoutX="184.0" layoutY="17.0" text="Add Medicine" textFill="#00442f">
          <font>
-            <Font name="Arial Black" size="27.0" />
+            <Font name="Arial Black" size="22.0" />
          </font>
       </Label>
-      <TextField fx:id="searchMed" layoutX="176.0" layoutY="115.0" prefHeight="28.0" prefWidth="392.0" promptText="Type Medicine Name" />
-      <Button fx:id="searchButton" alignment="CENTER" contentDisplay="CENTER" layoutX="582.0" layoutY="115.0" mnemonicParsing="false" onAction="#onClickSearchMedicine" prefHeight="28.0" prefWidth="62.0" style="-fx-background-color: #009ee2; -fx-border-width: 1; -fx-border-radius: 15; -fx-background-radius: 15;" text="Search" textAlignment="CENTER" textFill="WHITE">
+      <TextField fx:id="searchMed" layoutX="199.0" layoutY="115.0" prefHeight="28.0" prefWidth="392.0" promptText="Type Medicine Name">
          <font>
-            <Font name="Verdana" size="12.0" />
+            <Font size="14.0" />
+         </font></TextField>
+      <Button fx:id="searchButton" alignment="CENTER" contentDisplay="CENTER" layoutX="597.0" layoutY="113.0" mnemonicParsing="false" onAction="#onClickSearchMedicine" prefHeight="30.0" prefWidth="73.0" style="-fx-background-color: #099006; -fx-border-width: 1; -fx-border-radius: 5; -fx-background-radius: 5;" text="Search" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Verdana" size="14.0" />
          </font>
       </Button>
-      <ListView fx:id="medicinesListView" layoutX="176.0" layoutY="172.0" onMouseClicked="#fillData" prefHeight="200.0" prefWidth="468.0" />
+      <ListView fx:id="medicinesListView" layoutX="199.0" layoutY="172.0" onMouseClicked="#fillData" prefHeight="200.0" prefWidth="468.0" />
       <AnchorPane layoutX="150.0" layoutY="482.0" prefHeight="118.0" prefWidth="600.0">
          <children>
-            <Button fx:id="proceedButton" layoutX="473.0" layoutY="45.0" mnemonicParsing="false" onAction="#onClickProceed" prefHeight="32.0" prefWidth="68.0" style="-fx-background-color: #6bc45a; -fx-background-radius: 15;" text="Proceed" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <Button fx:id="proceedButton" layoutX="456.0" layoutY="45.0" mnemonicParsing="false" onAction="#onClickProceed" prefHeight="32.0" prefWidth="100.0" style="-fx-background-color: #6bc45a; -fx-background-radius: 15;" text="Proceed" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                <font>
-                  <Font size="13.0" />
+                  <Font name="System Bold" size="14.0" />
                </font>
             </Button>
-            <Button fx:id="proceedButton1" layoutX="392.0" layoutY="45.0" mnemonicParsing="false" onAction="#onBackClicked" prefHeight="32.0" prefWidth="68.0" style="-fx-background-color: #d73a49; -fx-background-radius: 15;" text="Back" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <Button fx:id="proceedButton1" layoutX="346.0" layoutY="45.0" mnemonicParsing="false" onAction="#onBackClicked" prefHeight="32.0" prefWidth="100.0" style="-fx-background-color: #d73a49; -fx-background-radius: 15;" text="Back" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                <font>
-                  <Font size="13.0" />
+                  <Font name="System Bold" size="14.0" />
                </font>
             </Button>
          </children>
       </AnchorPane>
-      <TextField fx:id="med_name" layoutX="176.0" layoutY="402.0" prefHeight="30.0" prefWidth="200.0" promptText="Medicine Name" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0 0 1 0;">
+      <TextField fx:id="med_name" layoutX="205.0" layoutY="402.0" prefHeight="30.0" prefWidth="200.0" promptText="Medicine Name" style="-fx-background-color: transparent; -fx-border-color: #099006; -fx-border-width: 0 0 1 0;">
          <font>
             <Font size="14.0" />
          </font>
       </TextField>
-      <TextField fx:id="price" layoutX="176.0" layoutY="442.0" prefHeight="30.0" prefWidth="200.0" promptText="Price" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0 0 1 0;">
+      <TextField fx:id="price" layoutX="205.0" layoutY="442.0" prefHeight="30.0" prefWidth="200.0" promptText="Price" style="-fx-background-color: transparent; -fx-border-color: #099006; -fx-border-width: 0 0 1 0;">
          <font>
             <Font size="14.0" />
          </font>
       </TextField>
-      <TextField fx:id="quantity" layoutX="444.0" layoutY="442.0" prefHeight="30.0" prefWidth="200.0" promptText="Quantity" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0 0 1 0;">
+      <TextField fx:id="quantity" layoutX="461.0" layoutY="442.0" prefHeight="30.0" prefWidth="200.0" promptText="Quantity" style="-fx-background-color: transparent; -fx-border-color: #099006; -fx-border-width: 0 0 1 0;">
          <font>
             <Font size="14.0" />
          </font>
       </TextField>
-      <TextField fx:id="company_name" layoutX="444.0" layoutY="402.0" prefHeight="30.0" prefWidth="200.0" promptText="Company Name" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0 0 1 0;">
+      <TextField fx:id="company_name" layoutX="460.0" layoutY="402.0" prefHeight="30.0" prefWidth="200.0" promptText="Company Name" style="-fx-background-color: transparent; -fx-border-color: #099006; -fx-border-width: 0 0 1 0;">
          <font>
             <Font size="14.0" />
          </font>
