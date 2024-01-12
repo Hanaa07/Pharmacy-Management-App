@@ -31,21 +31,13 @@ package instrumentation;
 
 import java.util.Collection;
 
-import com.mysql.cj.conf.BooleanPropertyDefinition;
-import com.mysql.cj.conf.EnumPropertyDefinition;
-import com.mysql.cj.conf.IntegerPropertyDefinition;
-import com.mysql.cj.conf.LongPropertyDefinition;
-import com.mysql.cj.conf.MemorySizePropertyDefinition;
-import com.mysql.cj.conf.PropertyDefinition;
-import com.mysql.cj.conf.PropertyDefinitions;
-import com.mysql.cj.conf.StringPropertyDefinition;
+import com.mysql.cj.conf.*;
 import com.mysql.cj.jdbc.MysqlDataSource;
 
 import javassist.ClassPool;
 import javassist.CtClass;
 import javassist.CtMethod;
 import javassist.CtNewMethod;
-import javassist.bytecode.DuplicateMemberException;
 
 public class AddMethods {
     private static boolean verbose = false;
@@ -118,7 +110,7 @@ public class AddMethods {
             CtMethod m = CtNewMethod.make(mbody, clazz);
             clazz.addMethod(m);
             sysOut(m.toString());
-        } catch (DuplicateMemberException ex) {
+        } catch (RuntimeException ex) {
             // ignore
         }
     }
@@ -132,7 +124,7 @@ public class AddMethods {
             CtMethod m = CtNewMethod.make(mbody, clazz);
             clazz.addMethod(m);
             sysOut(m.toString());
-        } catch (DuplicateMemberException ex) {
+        } catch (RuntimeException ex) {
             // ignore
         }
     }
