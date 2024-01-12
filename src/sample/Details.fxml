@@ -85,7 +85,7 @@
          </font></Button>
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="351.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../Images/1%20(1).png" />
+            <Image url="@../Images/1 (1).png" />
          </image>
       </ImageView>
     </children>
